@@ -67,7 +67,11 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className={`w-full h-full ${project.title.includes('Walmart') ? 'object-contain bg-white p-4' : 'object-cover'}`}
+                  className={`w-full h-full ${project.title.includes('Walmart') ? 'object-contain bg-white p-6' : 'object-cover'}`}
+                  onError={(e) => {
+                    console.error('Image failed to load:', project.image);
+                    e.currentTarget.style.display = 'none';
+                  }}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="flex space-x-4">
