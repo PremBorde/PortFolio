@@ -14,7 +14,7 @@ const projects: Project[] = [
     title: 'PathfinderEdu - Career Navigator Web App',
     description:
       'Full-Stack MERN Application - Career guidance platform for students after 10th & 12th. Features include career exploration tools, entrance exams database, scholarship listings, and role-based dashboards.',
-    image: 'https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80',
     technologies: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'MongoDB'],
     github: 'https://github.com/PremBorde/PathFinderEdu',
     live: 'https://premborde.github.io/PathFinderEdu/',
@@ -23,18 +23,18 @@ const projects: Project[] = [
     title: 'Python Voice Assistant with Face Recognition & GUI',
     description:
       'Multi-functional desktop assistant with smart features including voice commands, face recognition, and desktop GUI. Integrates Android control via ADB and uses SQLite for local storage.',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80',
     technologies: ['Python', 'OpenCV', 'SQLite', 'HTML/CSS/JS', 'ADB'],
     github: 'https://github.com/PremBorde/voice-assistant',
     live: '#',
   },
   {
-    title: 'Nagrik Aur Samvidhan - Gamified Constitution Learning',
+    title: 'Walmart Carbon Rewards - Eco-Friendly E-Commerce Clone',
     description:
-      'Interactive civic literacy platform that simplifies Indian Constitution articles into Hinglish. Features quizzes, cards, and board games for students and citizens.',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67932ba0?auto=format&fit=crop&w=800&q=80',
-    technologies: ['React.js', 'Node.js', 'MongoDB', 'Gamification'],
-    github: 'https://github.com/PremBorde/nagrik-samvidhan',
+      'An innovative e-commerce platform that transforms Walmart shopping into an eco-friendly experience through "Carbon Mode". Features real-time carbon footprint data, AI-powered eco-recommendations, and a gamified reward system with CarbonCoins for sustainable purchases.',
+    image: '/walmart-logo.png',
+    technologies: ['React.js', 'Node.js', 'MongoDB', 'AI', 'Gamification'],
+    github: '#',
     live: '#',
   },
 ]
@@ -67,7 +67,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full ${project.title.includes('Walmart') ? 'object-contain bg-white p-4' : 'object-cover'}`}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="flex space-x-4">
