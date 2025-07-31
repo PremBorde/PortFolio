@@ -43,6 +43,7 @@ function App() {
                 particleBaseSize={120}
                 sizeRandomness={0.8}
                 cameraDistance={12}
+                className=""
               />
             </div>
             <div className="relative z-10">
