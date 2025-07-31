@@ -128,7 +128,7 @@
 
 .pc-card:hover, .pc-card.active {
   background: transparent !important;
-  background-image: url('/New_Profile.jpg.png') !important;
+  background-image: url('https://premborde.github.io/PortFolio/New_Profile.jpg.png') !important;
   background-size: cover;
   background-position: center;
   filter: none;

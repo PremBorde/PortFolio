@@ -32,7 +32,7 @@ const projects: Project[] = [
     title: 'Walmart Carbon Rewards - Eco-Friendly E-Commerce Clone',
     description:
       'An innovative e-commerce platform that transforms Walmart shopping into an eco-friendly experience through "Carbon Mode". Features real-time carbon footprint data, AI-powered eco-recommendations, and a gamified reward system with CarbonCoins for sustainable purchases.',
-    image: '/walmart-logo.png',
+    image: 'https://premborde.github.io/PortFolio/walmart-logo.png',
     technologies: ['React.js', 'Node.js', 'MongoDB', 'AI', 'Gamification'],
     github: '#',
     live: '#',
