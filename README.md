@@ -86,4 +86,4 @@ MIT License - feel free to use this template for your own portfolio!
 
 - Design inspired by various modern portfolio websites
 - Icons from Heroicons
-- Fonts from Google Fonts 
+- Fonts from Google Fonts
