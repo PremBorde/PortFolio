@@ -59,10 +59,12 @@ const Hero = () => {
                 Contact Me
               </motion.a>
               <motion.a
-                href="/resume.pdf"
+                href="/Prem Borde (4).pdf"
                 className="btn-secondary"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Download Resume
               </motion.a>

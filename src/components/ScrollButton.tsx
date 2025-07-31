@@ -32,22 +32,39 @@ const ScrollButton = () => {
       animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0.5 }}
       transition={{ duration: 0.3 }}
       onClick={isAtBottom ? scrollToTop : scrollToBottom}
-      className="fixed bottom-8 right-8 p-3 rounded-full bg-secondary text-primary shadow-lg hover:bg-opacity-90 transition-all duration-300 z-50"
+      className="fixed bottom-8 right-8 p-4 rounded-full bg-secondary text-white shadow-lg hover:bg-opacity-90 transition-all duration-300 z-50 backdrop-blur-sm border border-white/20"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className={`h-6 w-6 transition-transform duration-300 ${isAtBottom ? 'rotate-180' : ''}`}
-      >
-        <path d="M12 5l-7 7 7 7M5 12h14" />
-      </svg>
+      {isAtBottom ? (
+        // Up arrow for scrolling to top
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="h-6 w-6"
+        >
+          <path d="M18 15l-6-6-6 6" />
+        </svg>
+      ) : (
+        // Down arrow for scrolling to bottom
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="h-6 w-6"
+        >
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      )}
     </motion.button>
   );
 };
